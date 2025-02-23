@@ -1,0 +1,743 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+        font-family: "Lexend",'Serif';
+}
+
+/* Navbar section */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0px 100px 0px 100px;
+}
+
+.navbar__s1{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+}
+
+.navbar__logo{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar__s2{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__s2__menu{
+    display: flex;
+    gap: 10px;
+    flex-basis: 30%;
+}
+
+.navbar__s2__menu p{
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+}
+.navbar__s2__menu p:hover{
+    background-color: rgb(216, 214, 214);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar__s3{
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__s3__signin{
+    background-color: black;
+    color: #ffffff;
+    padding: 5px 10px 10px 10px;
+    border-radius: 50px;
+}
+
+.navbar__s3__signin:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navbar__s3__preference{
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.navbar__s3__preference:hover{
+    background-color: rgb(216, 214, 214);
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navbar__s3__preference .slash{
+    color: gray;padding: 5px;
+}
+
+/* Whereto section */
+
+.whereto__heading{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.whereto__option{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.option{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-items: center; 
+    color: rgb(53, 53, 53);
+    border-bottom: 2px transparent solid;
+
+}
+
+.option--search-border-fixed{
+    border-bottom: 2px black solid;
+    color: black;
+}
+
+.option:hover{
+    cursor: pointer;
+    color: rgb(105, 105, 105);
+    border-bottom: 2px rgb(105, 105, 105) solid;
+}
+
+/* Search-bar */
+
+.search-bar-section{
+    display: flex;
+    justify-content: center;
+}
+.search-bar{
+    display: flex;
+    padding: 18px;
+    box-shadow: 0px 3px 3px 3px rgb(204, 204, 204);
+    width: 56%;
+    margin-top: 20px;
+    border-radius: 50px;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-bar input{
+    border: none;
+    flex-basis: 100%;
+    font-size: 18px;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+/* Trip image-Section */
+
+.trip-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    position: relative;
+}
+
+.trip-image img{
+    border-radius: 10px;
+}
+
+.trip-image__desc{
+    position: absolute;
+    width: 30%;
+    right: 170px;
+    top: 50px;
+    text-align: left;
+}
+
+.trip-image__desc .powered-ai{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.powered-ai span{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.trip-image__desc h1{
+    font-size: 50px;
+    font-weight: 800;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.trip-image__desc h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.trip-image__desc .ai-btn{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    width: fit-content;
+    gap: 10px;
+}
+
+.trip-image__desc .ai-btn:hover{
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Dubai Card */
+
+.dubai-card{
+    display: flex;
+    background-color: #dbdada;
+    color: black;
+    padding: 20px;
+    margin: 80px 100px 0px 100px;
+    border-radius: 10px;
+    gap: 20px;
+    position: relative;
+}
+
+.dubai-card__image{
+    rotate: 5deg;
+    border-radius: 10px;
+}
+
+.dubai-card p{
+    margin-top: 10px;
+    width: 90%;
+}
+
+ .dubai-card__desc .view-more-btn{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 10px;
+    position: absolute;
+    top: 75%;
+    right: 30px;
+    border-radius: 20px;
+    width: fit-content;
+    border: transparent solid 2px;
+    border: black solid 1px;
+}
+
+.view-more-btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+/* Sea-sides section */
+
+.sea-sides{
+    margin: 80px 100px 0px 100px;
+}
+
+.sea-sides__heading{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sea-sides__desc{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.sea-sides__container{
+    display: flex;
+    margin-top: 10px;
+}
+
+.sea-sides__card{
+    margin: 10px;
+    flex-basis:24%;
+    position: relative;
+}
+
+.sea-sides__card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sea-sides__card img:hover{
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.sea-sides__card h2{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    box-shadow: inset 0px 0px 20px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Fave Travel section */
+
+.fave-travel{
+    margin: 80px 100px 0px 100px;
+}
+
+.fave-travel__heading{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.fave-travel__desc{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.fave-travel__container{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.fave-travel__card{
+    flex-basis: 33%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fave-travel__card img{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.fave-travel__card img:hover{
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.fave-travel__card a{
+    text-decoration: none;
+    color:rgb(44, 44, 44) ;
+}
+
+.fave-travel__card a:hover{
+    text-decoration: underline;
+}
+
+.fave-travel__card  p, h3, .heart{
+    margin-top: 20px;
+}
+
+.heart span{
+    display: block;
+}
+
+/* Explore section */
+
+.explore{
+    background-color: rgb(204, 204, 204);
+    margin-top: 30px;
+}
+
+.explore__heading{
+    margin: 0px 100px 0px 100px;
+    padding: 30px 0px 0px 0px;
+}
+
+.explore__container{
+    display: flex;
+    margin: 30px 100px 0px 100px;
+    gap: 20px;
+}
+
+.explore__card{
+    flex-basis: 33%;
+}
+
+.explore__card img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.explore__card img:hover{
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.explore__card h4{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.explore__card a{
+    text-decoration: none;
+    color:rgb(44, 44, 44) ;
+}
+
+.explore__card a:hover{
+    text-decoration: underline;
+}
+
+/* Wonderlab-card */
+
+.wonderlab-card{
+    margin: 100px 100px 0px 100px;
+    background-color: rgb(230, 226, 226);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.wonderlab-card__desc{
+    width: 40%;
+    text-align: center;
+    margin: 30px;
+}
+
+.wonderlab-card__desc .icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.wonderlab-card__desc .icon img{
+    width: 30px;
+    height: 30px;
+    mix-blend-mode: color-burn;
+}
+
+.wonderlab-card__desc h1{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.learn-more-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.learn-more-btn p{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    width: fit-content;
+}
+
+.learn-more-btn p:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+/* Home rentals */
+
+.home-rentals{
+    margin: 80px 100px 0px 100px;
+}
+.home-rentals__heading{
+    font-size: 30px;
+    
+}
+
+.home-rentals__sub-heading{
+    width: 30%;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.home-rentals__container{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.home-rentals__card{
+    flex-basis: 33%;
+}
+
+.home-rentals__card img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.home-rentals__card h4,p{
+    margin-top: 10px;
+}
+
+/* Traveller Card */
+
+/* Traveller card description */
+
+.traveller-card{
+    margin-top: 100px;
+    background-color: rgb(255, 233, 233);
+    padding-bottom: 20px;
+}
+
+.traveller-card__container{
+    margin: 0px 100px 0px 150px;
+    display: flex;
+    position: relative;
+
+}
+
+.traveller-card__desc{
+    width: 40%;
+}
+
+.traveller-card__desc img{
+    mix-blend-mode: color-burn;
+    width: 250px;
+    margin-top: 50px;
+}
+
+.traveller-card__desc__heading{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.traveller-card__desc__content{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.traveller-card__desc-btn{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    font-weight: bolder;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.traveller-card__desc-btn:hover{
+    opacity: 0.7;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+/* Traveller card design */
+
+
+.traveller-card__yellow-circle{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 208, 0);
+    border-radius: 100%;
+    position: absolute;
+    top: 0px;
+    left:40%;
+    animation-name:slide-down ;
+    animation-duration: 10s;
+}
+
+.traveller-card__blue-circle{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 255, 191);
+    border-radius: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    animation-name: slide-up;
+}
+
+@keyframes slide-dow {
+    0%{
+        top: 0px;
+        left: 40%;
+    }
+
+    25%{
+        top: 25%;
+        left: 60%;
+    }
+
+    50%{
+        top: 70%;
+        left: 75%;
+    }
+
+    75%{
+        top: 85%;
+        left: 85%;
+    }
+    
+    100%{
+        top: 100%;
+        bottom: 0px;
+    }
+}
+
+.traveller-card__image-circle{
+    width: 650px;
+    height: 400px;
+    background-image: url(./images/traveller-image-2.jpg);
+    border-radius: 50%;
+    rotate: -60deg;
+    position: absolute;
+    bottom: 120px;
+    z-index: 2;
+}
+
+/* Footer Section */
+
+/* Footer Section-1__Division-1 */
+
+.footer{
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    padding: 0px 100px 20px 100px;
+    margin-top: 100px;
+}
+
+.footer__s1{
+    flex-basis: 70%;
+}
+
+.footer__s1__division-1{
+    display: flex;
+    gap: 40px;
+}
+
+.footer__s1__division-1 h3{
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__s1__division-1 a{
+    display: block;
+    text-decoration: none;
+    color: #5c5c5c;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.footer__s1__division-1 a:hover{
+    color: #9c9c9c;
+    text-decoration: underline;
+}
+
+/* Footer Section-1__Division-2 */
+
+.terms-privacy{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.terms-privacy img{
+    width: 40px;
+    height: 40px;
+    mix-blend-mode: color-burn ;
+}
+
+.terms-privacy p,
+ .terms-privacy__desc{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.terms-privacy__hyperlinks a{
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    margin: 5px;
+}
+
+.terms-privacy__hyperlinks a:hover{
+    color: rgb(78, 78, 78);
+}
+
+.terms-privacy__desc__more-link{
+    color: black;
+}
+
+/* Footer Section-2 */
+
+.footer__s2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__s2__sites__heading{
+    font-weight: 400;
+}
+
+.footer__s2__sites__desc{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer__s2__sites__desc .viator-link{
+    color: black;
+}
+
+.footer__s2__selection .inr , .country{
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.footer__s2__selection .inr , .country:hover{
+    cursor: pointer;
+}
+
+.footer__s2__social-media{
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.footer__s2__social-media i{
+    font-size: 25px;
+}
+
+.footer__s2__social-media i:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
